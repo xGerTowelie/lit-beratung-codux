@@ -1,5 +1,6 @@
 // tailwind.config.js (ES module)
 import tailwindcssAnimate from 'tailwindcss-animate';
+import tailwindcssForms from '@tailwindcss/forms'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -76,6 +77,9 @@ export default {
             },
         },
     },
-    plugins: [tailwindcssAnimate],
+    plugins: [
+        tailwindcssAnimate,
+        tailwindcssForms,
+    ],
 };
 
