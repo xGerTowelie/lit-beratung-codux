@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Alerts from "../components/Alerts"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
+                <Alerts />
                 <div id="root">{children}</div>
             </body>
         </html>
