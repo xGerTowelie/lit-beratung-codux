@@ -1,10 +1,9 @@
-import { ReactNode } from "react"
-
-type Heading1Props = {
-    children: ReactNode
+export type HeadingProps = {
+    text: string
 }
-export default function Heading1(props: Heading1Props) {
+
+export default function Heading1(props: HeadingProps) {
     return (
-        <h1 className="text-3xl capitalize">{props.children}</h1>
+        <h1 className="text-5xl capitalize">{props.text}</h1>
     )
 }
